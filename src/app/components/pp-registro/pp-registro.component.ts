@@ -2,18 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-body',
-  templateUrl: './body.component.html',
-  styleUrls: ['./body.component.css']
+  selector: 'app-pp-registro',
+  templateUrl: './pp-registro.component.html',
+  styleUrls: ['./pp-registro.component.css']
 })
-export class BodyComponent implements OnInit {
-
-  public nombre: string;
+export class PpRegistroComponent implements OnInit {
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-
 
 }

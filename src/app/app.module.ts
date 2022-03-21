@@ -10,6 +10,9 @@ import { AnillosComponent } from './components/anillos/anillos.component';
 import { CollaresComponent } from './components/collares/collares.component';
 import { PulserasComponent } from './components/pulseras/pulseras.component';
 import { PerfumesComponent } from './components/perfumes/perfumes.component';
+import { PpRegistroComponent } from './components/pp-registro/pp-registro.component';
+import { FormularioInicioSesionComponent } from './components/formularios/formulario-inicio-sesion/formulario-inicio-sesion.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,9 +23,12 @@ import { PerfumesComponent } from './components/perfumes/perfumes.component';
     AnillosComponent,
     CollaresComponent,
     PulserasComponent,
-    PerfumesComponent
+    PerfumesComponent,
+    PpRegistroComponent,
+    FormularioInicioSesionComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule
   ],
