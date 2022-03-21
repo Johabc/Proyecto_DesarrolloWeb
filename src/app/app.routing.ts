@@ -8,6 +8,7 @@ import { PerfumesComponent } from "./components/perfumes/perfumes.component";
 import { PpRegistroComponent } from "./components/pp-registro/pp-registro.component";
 import { PulserasComponent } from "./components/pulseras/pulseras.component";
 
+
 const routes = [
   {
     path: '', component: InicioComponent
