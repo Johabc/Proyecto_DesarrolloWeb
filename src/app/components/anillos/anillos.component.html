@@ -1,9 +1,9 @@
-<div class="'anillo"  *ngFor="let anillo of listaAnillos">
+<div class='anillo'  *ngFor="let anillo of listaAnillos">
   <h2>{{anillo.nombre}}</h2>
-  <img class = 'imgAnillo' src = '../assets/imagenesAnillos{{anillo.imagen}}'>
+  <img class = 'imgAnillo' src = '../assets/imagenesAnillos/{{anillo.imagen}}'>
   <p>{{anillo.descripcion}}</p>
-  <p>{{anillo.precio}}</p>
-  <button>Comprar</button>
+  <span>{{anillo.precio | currency }}</span>
+  <button class='button'(click)= "adicionarCarrito(anillo.id)">Comprar</button>
 
 
 </div>
