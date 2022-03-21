@@ -23,4 +23,8 @@ export class FormularioRegistroComponent implements OnInit {
     alert("Usuario"+ Registro.name + "creado correctamente");
 
   }
+
+  guardar(){
+    localStorage.setItem('usuario', this.registro.email)
+  }
 }

@@ -15,6 +15,7 @@ import { FormularioInicioSesionComponent } from './components/formularios/formul
 import { FormsModule } from '@angular/forms';
 import { FormularioRegistroComponent } from './components/formularios/formulario-registro/formulario-registro.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { VerProductoComponent } from './ver-producto/ver-producto.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PerfumesComponent,
     PpRegistroComponent,
     FormularioInicioSesionComponent,
-    FormularioRegistroComponent
+    FormularioRegistroComponent,
+    VerProductoComponent
   ],
   imports: [
     FormsModule,
