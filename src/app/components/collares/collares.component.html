@@ -1,16 +1,9 @@
-<table class="table">
-  <thead>
-    <tr>
-      <td><img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/284/411/products/090d78dd-2243-4d85-9ded-d2f99e1c24fa_nube-8c1d7ad2c1b33f5aa615770362827449-1024-1024.jpg" alt="" width="100px"> </td>
-      <td><img src="https://cf.shopee.com.co/file/00526b1827659a840873bb3268c6ce89" alt="" width="100px"> </td>
-      <td><img src="https://www.marjoya.com/blog/wp-content/uploads/2015/10/joyas-para-hombre.jpg" alt="" width="100px"> </td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>PARLA</td>
-      <td>PARLA</td>
-      <td>PARLA</td>
-    </tr>
-  </tbody>
-</table>
+<div class='collar'  *ngFor="let collar of listaCollares">
+  <h2>{{collar.nombre}}</h2>
+  <img class = 'imgCollar' src = '../assets/imagenesCollar/{{collar.imagen}}'>
+  <p>{{collar.descripcion}}</p>
+  <span>{{collar.precio | currency }}</span>
+  <button class='button'(click)= "adicionarCarrito(collar.id)">Comprar</button>
+
+
+</div>
