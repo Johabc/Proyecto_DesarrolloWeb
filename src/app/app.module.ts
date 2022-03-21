@@ -14,6 +14,7 @@ import { PpRegistroComponent } from './components/pp-registro/pp-registro.compon
 import { FormularioInicioSesionComponent } from './components/formularios/formulario-inicio-sesion/formulario-inicio-sesion.component';
 import { FormsModule } from '@angular/forms';
 import { FormularioRegistroComponent } from './components/formularios/formulario-registro/formulario-registro.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FormularioRegistroComponent } from './components/formularios/formulario
   imports: [
     FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
