@@ -1,16 +1,21 @@
 export interface IPersona{
-  nombre: string;
-
+ email: string;
+ contra: string;
 }
 
 export class Usuario implements IPersona
 {
-  nombre: string;
   email: string;
-
+  contra: string;
 }
 
-export class Administrador implements IPersona
+export class Registro implements IPersona
 {
+  email: string;
+  contra: string;
+
   nombre: string;
+  apellido: string;
+  confEmail: string;
+  confContra: string;
 }

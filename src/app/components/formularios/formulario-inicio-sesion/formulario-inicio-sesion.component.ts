@@ -17,6 +17,7 @@ export class FormularioInicioSesionComponent implements OnInit {
   }
 
   formSumbit(){
+    debugger;
     this._usuarioService.agregar(this.usuario);
     this.usuario = new Usuario();
     alert("Usuario agregado correctamente");

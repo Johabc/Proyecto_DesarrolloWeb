@@ -1,0 +1,45 @@
+<h1>¡Cree una cuenta!</h1>
+<hr>
+<div class="row">
+<form (ngSubmit)="formSumbit()">
+
+  <div class="mb-3">
+    <label for="txt-nombre" class="form-label">Nombre</label>
+    <input type="text" class="form-control" name="txt-nombre" id="txt-nombre" placeholder="Ingrese su nombre" [(ngModel)]="registro.nombre" >
+  </div>
+
+  <div class="mb-3">
+    <label for="txt-apellidos" class="form-label">Apellidos</label>
+    <input type="text" class="form-control" name="txt-apellidos" id="txt-apellidos" placeholder="Ingrese su nombre" [(ngModel)]="registro.apellido" >
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Correo</label>
+    <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" [(ngModel)]="registro.email">
+  </div>
+
+
+  <div class="mb-3">
+    <label for="txt-confCorreo" class="form-label">Confirme su correo</label>
+    <input type="text" class="form-control" name="confCorreo" id="confCorreo" placeholder="Ingrese su nombre" [(ngModel)]="registro.confEmail" >
+  </div>
+
+
+  <div class="mb-3">
+    <label for="txt-contra" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" name="txt-contra" id="txt-contra" placeholder="Ingrese su nombre" [(ngModel)]="registro.contra" >
+  </div>
+
+  <div class="mb-3">
+    <label for="txt-confContra" class="form-label">Confirme su contraseña</label>
+    <input type="password" class="form-control" name="txt-confContra" id="txt-confContra" placeholder="Ingrese su nombre" [(ngModel)]="registro.confContra" >
+  </div>
+
+
+    <div class="mb-3">
+    <input type="submit" value="Registrarse" class="btn btn-primary">
+  </div>
+
+  </form>
+
+</div>

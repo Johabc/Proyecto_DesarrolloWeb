@@ -13,6 +13,7 @@ import { PerfumesComponent } from './components/perfumes/perfumes.component';
 import { PpRegistroComponent } from './components/pp-registro/pp-registro.component';
 import { FormularioInicioSesionComponent } from './components/formularios/formulario-inicio-sesion/formulario-inicio-sesion.component';
 import { FormsModule } from '@angular/forms';
+import { FormularioRegistroComponent } from './components/formularios/formulario-registro/formulario-registro.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     PulserasComponent,
     PerfumesComponent,
     PpRegistroComponent,
-    FormularioInicioSesionComponent
+    FormularioInicioSesionComponent,
+    FormularioRegistroComponent
   ],
   imports: [
     FormsModule,
