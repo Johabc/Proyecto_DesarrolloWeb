@@ -14,7 +14,7 @@ export class AnillosComponent implements OnInit {
         nombre: 'Anillo luna y sol',
         precio: 1000,
         imagen:'imagen01.jpg',
-        descripcion:'luna y sol, ideal para parjeas',
+        descripcion:'luna y sol, ideal para parejas',
         cantidad:100
     },
     {
