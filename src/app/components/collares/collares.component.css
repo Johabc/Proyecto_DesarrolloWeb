@@ -1,0 +1,22 @@
+.collar{
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+    float: left;
+
+}
+
+.imgCollar{
+
+    width: 90px;
+    height: 90px;
+    float: left
+
+}
+
+.button{
+
+    clear: both;
+    display: flex;
+    border-radius: 2px;
+}
