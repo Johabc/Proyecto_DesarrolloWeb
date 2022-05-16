@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Registro } from 'src/app/models/persona.model';
 import { RegistroService } from 'src/app/services/registro.service';
 
@@ -9,22 +10,25 @@ import { RegistroService } from 'src/app/services/registro.service';
 })
 export class FormularioRegistroComponent implements OnInit {
 
-  public registro: Registro = new Registro();
+  register: any = FormGroup;
 
-  constructor(public _registroService: RegistroService) { }
+
+  constructor(private fb:FormBuilder) { }
 
   ngOnInit(): void {
+    this.register = this.fb.group ({
+      nombre:['', Validators.required],
+      apellidos:['', Validators.required],
+      correo:['', Validators.compose([Validators.required, Validators.email])],
+      contra:['', Validators.required]
+    })
   }
 
-  formSumbit(){
-    debugger;
-    this._registroService.agregar(this.registro);
-    this.registro = new Registro();
-    alert("Usuario"+ Registro.name + "creado correctamente");
-
-  }
-
-  guardar(){
-    localStorage.setItem('usuario', this.registro.email)
+  registerSubmit(data:any){
+    console.log(data);
+  localStorage.setItem("usuario", data);
+  alert("Usuario agregado correctamente");
   }
 }
+
+

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Usuario } from 'src/app/models/persona.model';
 import { UsuarioService } from 'src/app/services/usuario.service';
 
@@ -8,19 +10,21 @@ import { UsuarioService } from 'src/app/services/usuario.service';
   styleUrls: ['./formulario-inicio-sesion.component.css']
 })
 export class FormularioInicioSesionComponent implements OnInit {
+  login: any = FormGroup;
 
-  public usuario: Usuario = new Usuario();
 
-  constructor(public _usuarioService: UsuarioService) { }
+  constructor(private fb:FormBuilder){
 
+  }
   ngOnInit(): void {
+    this.login = this.fb.group({
+      correo:['', Validators.compose([Validators.required, Validators.email])],
+      contra:['', Validators.required]
+    })
   }
 
-  formSumbit(){
-    debugger;
-    this._usuarioService.agregar(this.usuario);
-    this.usuario = new Usuario();
-    alert("Usuario agregado correctamente");
-
+  loginSubmit(data:any){
+    console.log(data);
   }
+
 }

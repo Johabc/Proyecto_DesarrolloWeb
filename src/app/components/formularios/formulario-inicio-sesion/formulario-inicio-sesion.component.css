@@ -1,0 +1,21 @@
+.btn-bg{
+  color: white;
+  background: #c55c5c;
+  border-color: #dfc9c9;
+}
+
+.form-bg {
+  color: white;
+  font-size: larger;
+}
+
+.form-login {
+    width: 650px;
+    background: #e18c8c;
+    padding: 25px;
+    margin: auto;
+    margin-top: 34px;
+    border-radius: 17px;
+    color: white;
+    box-shadow: 3px 3px #c55c5c;
+}
