@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormularioRegistroComponent } from './components/formularios/formulario-registro/formulario-registro.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VerProductoComponent } from './ver-producto/ver-producto.component';
+import { CarritoComponent } from './carrito/carrito.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { VerProductoComponent } from './ver-producto/ver-producto.component';
     PerfumesComponent,
     FormularioInicioSesionComponent,
     FormularioRegistroComponent,
-    VerProductoComponent
+    VerProductoComponent,
+    CarritoComponent
   ],
   imports: [
     FormsModule,

@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { Router, RouterModule } from "@angular/router";
+import { CarritoComponent } from "./carrito/carrito.component";
 import { AnillosComponent } from "./components/anillos/anillos.component";
 import { CollaresComponent } from "./components/collares/collares.component";
 import { FormularioInicioSesionComponent } from "./components/formularios/formulario-inicio-sesion/formulario-inicio-sesion.component";
@@ -38,6 +39,9 @@ const routes = [
   },
   {
     path:'verProducto', component: VerProductoComponent, canActivate: [NewUsersGuard]
+  },
+  {
+    path:'carrito', component: CarritoComponent
   }
 
 ]
