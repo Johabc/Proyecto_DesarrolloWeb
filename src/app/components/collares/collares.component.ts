@@ -51,6 +51,9 @@ export class CollaresComponent implements OnInit {
 
 
   adicionarCarrito(id: any){
+
+    console.log(id);
+    localStorage.setItem("Collar", id);
     window.alert("Producto adicionado en el carrito");
   }
 

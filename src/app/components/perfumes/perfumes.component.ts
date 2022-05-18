@@ -47,6 +47,8 @@ export class PerfumesComponent implements OnInit {
   }
 
   adicionarCarrito(id: any){
+    console.log(id);
+    localStorage.setItem("Perfume", id);
     window.alert("Producto adicionado en el carrito");
   }
 }

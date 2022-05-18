@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./anillos.component.css']
 })
 export class AnillosComponent implements OnInit {
- 
+
 
   listaAnillos=[{
         id:1,
@@ -46,10 +46,13 @@ export class AnillosComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-   
+
   }
 
   adicionarCarrito(id: any){
+
+    console.log(id);
+    localStorage.setItem("Anillo", id);
     window.alert("Producto adicionado en el carrito");
   }
 
