@@ -1,15 +1,9 @@
-<table class="table">
-  <thead>
-    <tr>
-      <td><img src="https://falabella.scene7.com/is/image/FalabellaCO/2771703_2?wid=800&hei=800&qlt=70" alt="" width="100px"> </td>
-      <td><img src="https://phantom-telva.unidadeditorial.es/971604e9cbc3d43a6131b01dad184b8b/resize/828/f/webp/assets/multimedia/imagenes/2019/03/25/15535055797866.jpg" alt="" width="100px"> </td>
-      <td><img src="https://danaperfumerias.com/blog/wp-content/uploads/2020/03/mejor-colonia-hombre-hugo-boss-boss-bottled.jpg" alt="" width="100px"> </td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-  
+<div class='perfume'  *ngFor="let perfume of listaPerfumes">
+  <h2>{{perfume.nombre}}</h2>
+  <img class = 'imgPerfume' src = '../assets/imagenesPerfumes/{{perfume.imagen}}'>
+  <p>{{perfume.descripcion}}</p>
+  <span>{{perfume.precio | currency }}</span>
+  <button class='button'(click)= "adicionarCarrito(perfume.id)">Comprar</button>
 
-    </tr>
-  </tbody>
-</table>
+
+</div>

@@ -16,7 +16,10 @@
 
 .button{
 
-    clear: both;
-    display: flex;
-    border-radius: 2px;
+  color: #f8f9fa;
+  background: #a15757;
+  border-color: #c55c5c;
+  clear: both;
+  display: flex;
+  border-radius: 2px;
 }

@@ -1,0 +1,25 @@
+.perfume{
+  width: 200px;
+  height: 200px;
+  margin: 40px;
+  float: left;
+
+}
+
+.imgPerfume{
+
+  width: 90px;
+  height: 90px;
+  float: left
+
+}
+
+.button{
+
+  color: #f8f9fa;
+  background: #a15757;
+  border-color: #c55c5c;
+  clear: both;
+  display: flex;
+  border-radius: 2px;
+}
