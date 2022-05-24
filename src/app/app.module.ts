@@ -16,6 +16,7 @@ import { FormularioRegistroComponent } from './components/formularios/formulario
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VerProductoComponent } from './ver-producto/ver-producto.component';
 import { CarritoComponent } from './carrito/carrito.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { CarritoComponent } from './carrito/carrito.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

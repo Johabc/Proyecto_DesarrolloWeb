@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Usuario } from '../models/persona.model';
 
@@ -8,7 +9,9 @@ export class UsuarioService {
 
   public listaspersonas: Usuario[] = [];
 
-  constructor() { }
+  constructor(
+    private httpClient: HttpClient
+  ) { }
 
   public agregar(usuario: Usuario){
     this.listaspersonas.push(usuario);

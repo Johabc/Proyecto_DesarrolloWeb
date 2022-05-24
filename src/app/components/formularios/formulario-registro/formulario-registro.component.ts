@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Registro } from 'src/app/models/persona.model';
+import { Registro, Usuario } from 'src/app/models/persona.model';
 import { RegistroService } from 'src/app/services/registro.service';
 
 @Component({
@@ -24,7 +24,7 @@ export class FormularioRegistroComponent implements OnInit {
     })
   }
 
-  registerSubmit(data:any){
+  registerSubmit(data:string){
     console.log(data);
   localStorage.setItem("usuario", data);
   alert("Usuario agregado correctamente");
